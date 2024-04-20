@@ -1,0 +1,98 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.205);
+}
+
+h2 {
+  color: #fff;
+  width: 100%;
+  padding: 30px 0 20px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.container {
+  width: 800px;
+  height: 600px;
+  background-color: rgb(53, 53, 53);
+  margin: 100px auto 0;
+  position: relative;
+}
+.container .title {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+.container .form_content {
+  background-color: rgba(0, 0, 0, 0.5411764706);
+  position: relative;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 600px;
+  height: 300px;
+}
+.container .form_content form {
+  font-size: 30px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
+.container .form_content form input,
+.container .form_content form select {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  background-color: #b6b6b6;
+  border-radius: 10px;
+}
+.container .form_content form input:focus,
+.container .form_content form select:focus {
+  outline: none;
+}
+.container .form_content form select {
+  width: 100px;
+  height: 80px;
+}
+.container .form_content form:first-child input {
+  width: 100px;
+  height: 80px;
+}
+.container .form_content form:last-of-type input {
+  width: 120px;
+  height: 80px;
+}
+.container .form_content .result {
+  color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 80%;
+}
+.container .form_content .result p {
+  font-size: 18px;
+}
+.container .form_content .result p:first-child {
+  margin-bottom: 10px;
+}
+.container button {
+  padding: 20px 80px;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 30px;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How old am i</title>
+    <script defer src="../src/js/main.js"></script>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h2>Doğum tariximdən indiyə kimi nə qədər vaxt keçib?</h2>
+            <img src="./img/thinking.png" alt="">
+        </div>
+
+        <div class="form_content">
+
+
+            <form>
+                <label for="day">Gün</label>
+                <input type="number" id="day" name="day" min="10">
+            </form>
+            <form>
+                <label for="month">Ay</label>
+                <select name="month" id="month">
+                    <option value="Yanvar">01</option>
+                    <option value="Fevral">02</option>
+                    <option value="Mart">03</option>
+                    <option value="Aprel">04</option>
+                    <option value="May">05</option>
+                    <option value="Iyun">06</option>
+                    <option value="Iyul">07</option>
+                    <option value="Avqust">08</option>
+                    <option value="Sentyabr">09</option>
+                    <option value="Oktyabr">10</option>
+                    <option value="Noyabr">11</option>
+                    <option value="Dekabr">12</option>
+                </select>
+            </form>
+            <form>
+                <label for="year">İl</label>
+                <input type="text" id="year" name="year" maxlength="4">
+            </form>
+            <div class="result">
+                <p id="result_date"></p>
+                <p id="result_time"></p>
+            </div>
+
+        </div>
+        <button onclick="age(year.value, month.value, day.value)">OK</button>
+
+    </div>
+</body>
+
+</html>
